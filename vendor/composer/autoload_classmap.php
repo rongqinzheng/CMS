@@ -14,6 +14,7 @@ return array(
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Notifications\\LeaveProcessed' => $baseDir . '/app/Notifications/LeaveProcessed.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
+    'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\LeaveServiceProvider' => $baseDir . '/app/Providers/LeaveServiceProvider.php',
     'App\\Services\\Leave\\AbstractHandler' => $baseDir . '/app/Services/Leave/AbstractHandler.php',
     'App\\Services\\Leave\\GeneralManagerHandler' => $baseDir . '/app/Services/Leave/GeneralManagerHandler.php',

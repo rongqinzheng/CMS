@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '28c94e53f9bd89ffb9ad725593e0737f4d9d22c6',
+        'reference' => '35960b1820f110561414ecf3db8b18d25f5ff47c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -406,7 +406,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '28c94e53f9bd89ffb9ad725593e0737f4d9d22c6',
+            'reference' => '35960b1820f110561414ecf3db8b18d25f5ff47c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -422,9 +422,9 @@
             'dev_requirement' => true,
         ),
         'laravel/passport' => array(
-            'pretty_version' => 'v13.0.5',
-            'version' => '13.0.5.0',
-            'reference' => '9a3b47bc784dc9334aad67f690b13230b0434960',
+            'pretty_version' => 'v13.0.4',
+            'version' => '13.0.4.0',
+            'reference' => 'cc80677dc02ca8be2972567223b78641a890e11e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/passport',
             'aliases' => array(),
@@ -859,8 +859,8 @@
         'psr/http-client-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
-                1 => '1.0',
+                0 => '1.0',
+                1 => '*',
             ),
         ),
         'psr/http-factory' => array(
@@ -875,8 +875,8 @@
         'psr/http-factory-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
-                1 => '1.0',
+                0 => '1.0',
+                1 => '*',
             ),
         ),
         'psr/http-message' => array(
@@ -891,8 +891,8 @@
         'psr/http-message-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
-                1 => '1.0',
+                0 => '1.0',
+                1 => '*',
             ),
         ),
         'psr/http-server-handler' => array(

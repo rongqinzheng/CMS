@@ -365,8 +365,8 @@ class ComposerStaticInit88970a0117c062eed55fa8728fc43833
         ),
         'Psr\\Http\\Server\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
-            1 => __DIR__ . '/..' . '/psr/http-server-handler/src',
+            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
+            1 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -598,6 +598,7 @@ class ComposerStaticInit88970a0117c062eed55fa8728fc43833
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Notifications\\LeaveProcessed' => __DIR__ . '/../..' . '/app/Notifications/LeaveProcessed.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\LeaveServiceProvider' => __DIR__ . '/../..' . '/app/Providers/LeaveServiceProvider.php',
         'App\\Services\\Leave\\AbstractHandler' => __DIR__ . '/../..' . '/app/Services/Leave/AbstractHandler.php',
         'App\\Services\\Leave\\GeneralManagerHandler' => __DIR__ . '/../..' . '/app/Services/Leave/GeneralManagerHandler.php',

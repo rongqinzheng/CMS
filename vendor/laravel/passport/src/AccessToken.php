@@ -60,12 +60,7 @@ class AccessToken implements ScopeAuthorizable, Arrayable, Jsonable, JsonSeriali
      */
     public function can(string $scope): bool
     {
-        if (empty($this->attributes['oauth_scopes'])) {
-            return false;
-        }
-
-        return in_array('*', $this->attributes['oauth_scopes'])
-            || $this->scopeExistsIn($scope, $this->attributes['oauth_scopes']);
+        return in_array('*', $this->oauth_scopes) || $this->scopeExistsIn($scope, $this->oauth_scopes);
     }
 
     /**
@@ -89,15 +84,7 @@ class AccessToken implements ScopeAuthorizable, Arrayable, Jsonable, JsonSeriali
      */
     public function revoke(): bool
     {
-        if ($this->token) {
-            return $this->token->revoke();
-        }
-
-        if (isset($this->attributes['oauth_access_token_id'])) {
-            return (bool) Passport::token()->newQuery()->whereKey($this->attributes['oauth_access_token_id'])->update(['revoked' => true]);
-        }
-
-        return false;
+        return (bool) Passport::token()->newQuery()->whereKey($this->oauth_access_token_id)->update(['revoked' => true]);
     }
 
     /**
@@ -105,15 +92,7 @@ class AccessToken implements ScopeAuthorizable, Arrayable, Jsonable, JsonSeriali
      */
     protected function getToken(): ?Token
     {
-        if ($this->token) {
-            return $this->token;
-        }
-
-        if (isset($this->attributes['oauth_access_token_id'])) {
-            return $this->token = Passport::token()->newQuery()->find($this->attributes['oauth_access_token_id']);
-        }
-
-        return null;
+        return $this->token ??= Passport::token()->newQuery()->find($this->oauth_access_token_id);
     }
 
     /**
