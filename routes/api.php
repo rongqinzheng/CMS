@@ -4,6 +4,3 @@
 use App\Http\Controllers\LeaveController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
-
-
